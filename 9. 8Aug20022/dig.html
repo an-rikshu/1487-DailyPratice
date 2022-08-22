@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          body{
+                background-color: orange;
+            }
+            h1{
+            text-align: center;
+           }
+        #shape{
+            background-color: rgb(7, 7, 50);
+            margin-left: 45%;
+     
+            
+            visibility: hidden;
+        }
+     button{>
+            height:35px;
+            background-color: rgb(121,123,123);
+            width:40%;
+            margin-left:30%;
+        }
+        input{
+            height:30px;
+            width:60%;
+            margin-left:20%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1> Enter a Number to create a Square shape </h1>
+    <input type = "text"  id  = "in"><br><br>
+
+    <button onclick = "func()">Create Square Shape </button>
+    <br><br><br>
+    <div id = "shape"></div>
+
+    <Script>
+        function func(){
+            let val = document.getElementById("in").value;
+            if(val == null || val == " " || val == " "){
+                alert("please enter a no ");
+            }
+            else if(NaN(val)){
+                alert("please enter a  five digit no")
+
+            }
+
+            else{
+                val = Number(val);
+                let sum =0;
+                while(val>0){
+                    let r = val % 10;
+                    sum += r;
+                    val = Math.floor(val/10);
+               }
+               let rad = Math.floor(sum/5);
+
+            }
+           
+            document.getElementById("shape").style.height= sum +"px";
+                 document.getElementById("shape").style.width= sum +"px";
+                 document.getElementById("shape").style.borderRadius= rad + "px";
+                 document.getElementById("shape").style.transition="all 3s";
+                document.getElementById("shape").style.visibility="visible";
+
+            }
+        
+            
+        
+    </Script>
+    
+</body>
+</html>
