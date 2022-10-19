@@ -51,7 +51,7 @@ const Details = () => {
         </div>
 
 
-        <Link style={{margin:"0% 0% 1% 91%",backgroundColor:"blue"}} className="btn btn-primary" to="/users/add">Add User</Link>
+        <Link style={{margin:"0% 0% 1% 91%",backgroundColor:"blue"}} className="btn btn-primary" to="/users/add">Add Team</Link>
         <table class="table border shadow">
           <thead class="thead-dark">
             <tr>

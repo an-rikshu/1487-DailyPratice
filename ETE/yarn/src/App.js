@@ -17,6 +17,8 @@ import User from "./components/users/User";
 import Details from "./components/pages/Details";
 import Login from "./components/pages/Login";
 import SignUp from "./components/pages/Signup";
+import Post from "./components/LC/Post";
+import { PostForm } from "./components/LC/PostForm";
 
 function App(props) {
   return (
@@ -33,6 +35,8 @@ function App(props) {
           <Route exact path="/users/:id" component={User} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/picture" component={PostForm} />
+          <Route exact path="/post" component={Post} />
           <Route component={NotFound} />
         </Switch>
       </div>

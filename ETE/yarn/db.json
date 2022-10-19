@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "aa",
+      "username": "aa",
+      "email": "aa",
+      "phone": "aa",
+      "website": "add",
+      "id": 1
+    },
+    {
+      "name": "Antriksh Sharma",
+      "username": "",
+      "email": "antriksh1487.be20@chitkara.edu.in",
+      "phone": "7876732554",
+      "website": "",
+      "id": 2
+    },
+    {
+      "name": "an",
+      "username": "dfs",
+      "email": "snam@gamil.com",
+      "phone": "5678",
+      "website": "sdsfdm",
+      "id": 3
+    }
+  ]
+}
